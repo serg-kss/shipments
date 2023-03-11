@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-proformas.component.css']
 })
 export class ListProformasComponent implements OnInit {
-
+  create_pi: string = 'create-pi';
   constructor() { }
 
   ngOnInit(): void {

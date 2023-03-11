@@ -1,1 +1,35 @@
-<p>list-proformas works!</p>
+<div>
+   <app-table-headers [redir] = 'create_pi'></app-table-headers>
+</div>
+<div id="pi">
+   <h1 class="font-bold py-4 uppercase">Proforma Invoices:</h1>
+   <div class="overflow-x-scroll">
+       <table class="w-full whitespace-nowrap">
+           <thead class="bg-black/60">
+               <th class="text-center py-3 px-2 rounded-l-lg">Номер</th>
+               <th class="text-center py-3 px-2">PI#</th>
+               <th class="text-center py-3 px-2">Дата</th>
+               <th class="text-center py-3 px-2">Сума</th>
+               <th class="text-center py-3 px-2">Кількість</th>
+               <th class="text-center py-3 px-2">Постачальник</th>
+               <th class="text-center py-3 px-2">Валюта</th>
+               <th class="text-center py-3 px-2">Отримувач</th>
+               <th class="text-center py-3 px-2">Менеджер</th>
+               <th class="text-center py-3 px-2 rounded-r-lg">Коментар</th>
+           </thead>
+           <tr class="border-b border-gray-700">
+               <td class="py-3 px-2 font-bold text-center">ooo1</td>
+               <td class="py-3 px-2 text-center">HY23-45-67</td>
+               <td class="py-3 px-2 text-center">20.02.2020</td>
+               <td class="py-3 px-2 text-center">4567898,00</td>
+               <td class="py-3 px-2 text-center">121445</td>
+               <td class="py-3 px-2 text-center">Tigar Tyre</td>
+               <td class="py-3 px-2 text-center">EUR</td>
+               <td class="py-3 px-2 text-center">ТОВ Скумбрія</td>
+               <td class="py-3 px-2 text-center">Кілька С.В.</td>
+               <td class="py-3 px-2 text-center">Гарні шини</td>
+           </tr>                                     
+       </table>
+   </div>
+</div>          
+

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-invoices.component.css']
 })
 export class ListInvoicesComponent implements OnInit {
-
+  create_invoice: string = 'create-invoices';
   constructor() { }
 
   ngOnInit(): void {
