@@ -24,6 +24,7 @@ import { AuthService } from './services/auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableHeadersComponent } from './parts/table-headers/table-headers.component';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,7 @@ import { TableHeadersComponent } from './parts/table-headers/table-headers.compo
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

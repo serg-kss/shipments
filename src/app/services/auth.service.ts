@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import {
   HttpClient,
-  HttpErrorResponse,
-  HttpParams,
 } from '@angular/common/http';
 import { tap, Observable } from 'rxjs';
 import { Auth } from '../interfaces/auth';
@@ -14,13 +12,21 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  is_auth: boolean = true;
+  is_auth: boolean = false;
+  user: any = {}
   
-  authenticate(auth: Auth): Observable<Auth> {
+  authenticate(login: string, password: string): Observable<Auth> {
     return this.http
-      .post<Auth>('https://fakestoreapi.com/auth/login', auth)
+      .post<Auth>('http://localhost:8080/api/shipments/auth', {login: login, password: password})
       .pipe(tap((response) => {
-        console.log(response)})
+        this.user = response
+        if (this.user[0] == undefined ){
+          this.is_auth = false
+        }
+        else if(this.user[0].login == login && this.user[0].password == password){
+          this.is_auth = true
+        }
+      })        
       );
   }
 }

@@ -7,9 +7,13 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'Shipments';
+  is_auth: boolean = false;
 
   constructor(public auth: AuthService){}
-  title = 'shipments';
-  is_auth: boolean = this.auth.is_auth;
+  
+  closeForm() {
+    this.is_auth = true;
+  }
 
 }

@@ -1,6 +1,6 @@
 <div>
   <div *ngIf="!is_auth">
-    <app-auth-page></app-auth-page>
+    <app-auth-page (onExit)="closeForm()"></app-auth-page>
   </div>
   <div *ngIf="is_auth">
     <app-nav></app-nav>

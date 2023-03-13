@@ -16,26 +16,16 @@
                   <th class="text-left py-3 px-2">Сезон</th>
                   <th class="text-left py-3 px-2 rounded-r-lg">Доп відмітки</th>
               </thead>
-              <tr class="border-b border-gray-700">
-                  <td class="py-3 px-2 font-bold">i1234</td>
-                  <td class="py-3 px-2">Tigar</td>
-                  <td class="py-3 px-2">225/45R18 99V</td>
-                  <td class="py-3 px-2">Winer</td>
-                  <td class="py-3 px-2">-</td>
-                  <td class="py-3 px-2">легкова</td>
-                  <td class="py-3 px-2">зима</td>
-                  <td class="py-3 px-2">гарна шина</td>
-              </tr>
-              <tr class="border-b border-gray-700">
-               <td class="py-3 px-2 font-bold">k1235</td>
-               <td class="py-3 px-2">Aeolus</td>
-               <td class="py-3 px-2">275/70R22 185/188</td>
-               <td class="py-3 px-2">AGS80</td>
-               <td class="py-3 px-2">18</td>
-               <td class="py-3 px-2">грузова </td>
-               <td class="py-3 px-2">зима</td>
-               <td class="py-3 px-2">гарна шина</td>
-           </tr>                                      
+              <tr class="border-b border-gray-700" *ngFor="let item of products">
+                  <td class="py-3 px-2 font-bold">{{item.tyre_id}}</td>
+                  <td class="py-3 px-2">{{item.brand}}</td>
+                  <td class="py-3 px-2">{{item.size}} {{item.index_speed}}{{item.index_load}}</td>
+                  <td class="py-3 px-2">{{item.model}}</td>
+                  <td class="py-3 px-2">{{item.sl}}</td>
+                  <td class="py-3 px-2">{{item.type}}</td>
+                  <td class="py-3 px-2">{{item.sezon}}</td>
+                  <td class="py-3 px-2">{{item.comment}}</td>
+              </tr>                                     
           </table>
       </div>
   </div>  
