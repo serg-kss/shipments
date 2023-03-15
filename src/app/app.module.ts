@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableHeadersComponent } from './parts/table-headers/table-headers.component';
 import { ProductsService } from './services/products.service';
+import { ProductInfoComponent } from './components/product-info/product-info.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProductsService } from './services/products.service';
     FooterComponent,
     StockComponent,
     SidebarComponent,
-    TableHeadersComponent
+    TableHeadersComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,

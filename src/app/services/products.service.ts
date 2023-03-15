@@ -45,6 +45,39 @@ export class ProductsService {
       })        
       );
   }
+
+  changeProduct(
+    id: string,
+    tyre_id: string,
+    brand: string,
+    size: string,
+    model: string,
+    sl: string,
+    index_speed: string,
+    index_load: string,
+    type: string,
+    sezon: string,
+    comment: string,   
+    ): Observable<Tyre> {
+    return this.http
+      .put<Tyre>('http://localhost:8080/api/shipments/change-product', {
+        id: id,
+        tyre_id: tyre_id,
+        brand: brand,
+        size: size,
+        model: model,
+        sl: sl,
+        index_speed: index_speed,
+        index_load: index_load,
+        type: type,
+        sezon: sezon,
+        comment: comment,
+      })
+      .pipe(tap((response) => {
+        console.log(response);
+      })        
+      );
+    }
   
   getAll(): Observable<Tyre[]> {
     return this.http

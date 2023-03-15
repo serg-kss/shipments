@@ -1,46 +1,46 @@
 <!-- component -->
 <!-- This is an example component -->
-<div class="max-w-2xl mx-auto bg-white p-16">
+<div class="max-w-2xl mx-auto bg-black rounded-lg p-16">
 	<form #form="ngForm" (ngSubmit)="createProduct(form)">
     <div class="grid gap-6 mb-6 lg:grid-cols-2">
         <div>
-            <label for="tyre_id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Артикул</label>
+            <label for="tyre_id" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Артикул</label>
             <input type="text" id="tyre_id" name="tyre_id" [(ngModel)]="tyre_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="br505" required>
         </div>
         <div>
-            <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Бренд</label>
+            <label for="brand" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Бренд</label>
             <input type="brand" id="brand" name="brand" [(ngModel)]="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tigar" required>
         </div>
         <div>
-            <label for="size" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Розмір</label>
+            <label for="size" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Розмір</label>
             <input type="text" id="size" name="size" [(ngModel)]="size" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="225/45R18" required>
         </div>
         <div>
-            <label for="model" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Модель</label>
+            <label for="model" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Модель</label>
             <input type="text" id="model" name="model" [(ngModel)]="model" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="KH15" required>
         </div>
         <div>
-            <label for="sl" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Слойність</label>
+            <label for="sl" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Слойність</label>
             <input type="text" id="sl" name="sl" [(ngModel)]="sl" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="18" required>
         </div>   
         <div>
-            <label for="index_speed" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Індекс скорості</label>
+            <label for="index_speed" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Індекс скорості</label>
             <input type="text" id="index_speed" name="index_speed" [(ngModel)]="index_speed" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="98" required>
         </div>
         <div>
-            <label for="index_load" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Індекс навантаження</label>
+            <label for="index_load" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Індекс навантаження</label>
             <input type="text" id="index_load" name="index_load" [(ngModel)]="index_load" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="W" required>
         </div>
         <div>
-            <label for="type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Тип</label>
+            <label for="type" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Тип</label>
             <input type="text" id="type" name="type" [(ngModel)]="type" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="легкова" required>
         </div>
         <div>
-            <label for="sezon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Сезонність</label>
+            <label for="sezon" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Сезонність</label>
             <input type="text" id="sezon" name="sezon" [(ngModel)]="sezon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="зима" required>
         </div>
         <div>
-            <label for="comment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Коментар</label>
+            <label for="comment" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Коментар</label>
             <input type="text" id="comment" name="comment" [(ngModel)]="comment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="коментар" required>
         </div>
     </div>

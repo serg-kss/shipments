@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 import { Tyre } from 'src/app/interfaces/product';
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -12,11 +13,16 @@ export class ListProductsComponent {
   create_product: string = 'create-product'
   products: Tyre[] = []
 
-  constructor(public productService: ProductsService) { 
+  constructor(public productService: ProductsService, private router: Router) { 
 
     this.productService.getAll().subscribe((data)=>{
       this.products = data
     })
+
+  }
+
+  navigateWithState(i:number): void {
+    this.router.navigateByUrl('products/info', {state: this.products[i]});
   }
 
 

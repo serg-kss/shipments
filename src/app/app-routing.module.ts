@@ -7,6 +7,7 @@ import { ListProductsComponent } from './components/list-products/list-products.
 import { CreateInvoiceComponent } from './components/create-invoice/create-invoice.component';
 import { CreateProformaComponent } from './components/create-proforma/create-proforma.component';
 import { ListProformasComponent } from './components/list-proformas/list-proformas.component';
+import { ProductInfoComponent } from './components/product-info/product-info.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'create-pi', component: CreateProformaComponent},
   {path: 'pi', component: ListProformasComponent},
   {path: 'create-product', component: CreateProductComponent},
+  {path: 'products/info', component: ProductInfoComponent},
   {path: 'products', component: ListProductsComponent}
 ];
 
