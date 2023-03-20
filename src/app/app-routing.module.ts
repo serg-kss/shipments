@@ -8,6 +8,9 @@ import { CreateInvoiceComponent } from './components/create-invoice/create-invoi
 import { CreateProformaComponent } from './components/create-proforma/create-proforma.component';
 import { ListProformasComponent } from './components/list-proformas/list-proformas.component';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
+import { CreateShipperComponent } from './components/create-shipper/create-shipper.component';
+import { ListShippersComponent } from './components/list-shippers/list-shippers.component';
+import { CreateContractComponent } from './components/create-contract/create-contract.component';
 
 
 const routes: Routes = [
@@ -18,7 +21,10 @@ const routes: Routes = [
   {path: 'pi', component: ListProformasComponent},
   {path: 'create-product', component: CreateProductComponent},
   {path: 'products/info', component: ProductInfoComponent},
-  {path: 'products', component: ListProductsComponent}
+  {path: 'products', component: ListProductsComponent},
+  {path: 'contracts', component: ListShippersComponent},
+  {path: 'create-shipper', component: CreateShipperComponent},
+  {path: 'create-contract', component: CreateContractComponent}
 ];
 
 @NgModule({

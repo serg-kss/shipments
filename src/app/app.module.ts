@@ -26,6 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableHeadersComponent } from './parts/table-headers/table-headers.component';
 import { ProductsService } from './services/products.service';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
+import { CreateContractComponent } from './components/create-contract/create-contract.component';
+import { ShipperService } from './services/shipper.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { ProductInfoComponent } from './components/product-info/product-info.com
     StockComponent,
     SidebarComponent,
     TableHeadersComponent,
-    ProductInfoComponent
+    ProductInfoComponent,
+    CreateContractComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,7 @@ import { ProductInfoComponent } from './components/product-info/product-info.com
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService, ProductsService],
+  providers: [AuthService, ProductsService, ShipperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

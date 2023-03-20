@@ -76,8 +76,12 @@ export class ProductsService {
       .pipe(tap((response) => {
         console.log(response);
       })        
-      );
-    }
+    );
+  }
+
+  deleteProduct(id: string): Observable<string> {
+    return this.http.post<string>('http://localhost:8080/api/shipments/delete-product', {id: id})
+  }
   
   getAll(): Observable<Tyre[]> {
     return this.http

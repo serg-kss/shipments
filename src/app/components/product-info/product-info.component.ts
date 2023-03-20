@@ -61,6 +61,12 @@ export class ProductInfoComponent {
     }
   }
 
+  deleteProduct(){
+    this.product.deleteProduct(this.id).subscribe(()=>{
+      this.router.navigate(['products'])
+    })
+  }
+
   correction_btn(){
     this.corrections = true;
   }
