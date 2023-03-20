@@ -1,0 +1,4 @@
+#arrow:hover{
+   animation: wobble; 
+   animation-duration: 1s; 
+}

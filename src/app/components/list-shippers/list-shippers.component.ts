@@ -27,4 +27,8 @@ export class ListShippersComponent {
     this.router.navigate(['create-contract'])
   }
 
+  navigateWithState(i:number): void {
+    this.router.navigateByUrl('shippers/info', {state: this.shippers[i]});
+  }
+
 }

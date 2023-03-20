@@ -28,6 +28,7 @@ import { ProductsService } from './services/products.service';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
 import { CreateContractComponent } from './components/create-contract/create-contract.component';
 import { ShipperService } from './services/shipper.service';
+import { ShipperInfoComponent } from './components/shipper-info/shipper-info.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ShipperService } from './services/shipper.service';
     SidebarComponent,
     TableHeadersComponent,
     ProductInfoComponent,
-    CreateContractComponent
+    CreateContractComponent,
+    ShipperInfoComponent
   ],
   imports: [
     BrowserModule,

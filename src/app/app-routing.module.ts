@@ -11,6 +11,7 @@ import { ProductInfoComponent } from './components/product-info/product-info.com
 import { CreateShipperComponent } from './components/create-shipper/create-shipper.component';
 import { ListShippersComponent } from './components/list-shippers/list-shippers.component';
 import { CreateContractComponent } from './components/create-contract/create-contract.component';
+import { ShipperInfoComponent } from './components/shipper-info/shipper-info.component';
 
 
 const routes: Routes = [
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'products', component: ListProductsComponent},
   {path: 'contracts', component: ListShippersComponent},
   {path: 'create-shipper', component: CreateShipperComponent},
-  {path: 'create-contract', component: CreateContractComponent}
+  {path: 'create-contract', component: CreateContractComponent},
+  {path: 'shippers/info', component: ShipperInfoComponent}
 ];
 
 @NgModule({
