@@ -29,6 +29,8 @@ import { ProductInfoComponent } from './components/product-info/product-info.com
 import { CreateContractComponent } from './components/create-contract/create-contract.component';
 import { ShipperService } from './services/shipper.service';
 import { ShipperInfoComponent } from './components/shipper-info/shipper-info.component';
+import { ContractService } from './services/contract.service';
+import { ListContractsComponent } from './components/list-contracts/list-contracts.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { ShipperInfoComponent } from './components/shipper-info/shipper-info.com
     TableHeadersComponent,
     ProductInfoComponent,
     CreateContractComponent,
-    ShipperInfoComponent
+    ShipperInfoComponent,
+    ListContractsComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,7 @@ import { ShipperInfoComponent } from './components/shipper-info/shipper-info.com
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService, ProductsService, ShipperService],
+  providers: [AuthService, ProductsService, ShipperService, ContractService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

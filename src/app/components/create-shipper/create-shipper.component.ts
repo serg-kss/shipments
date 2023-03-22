@@ -21,7 +21,7 @@ export class CreateShipperComponent{
       this.shipper.createShipper(this.company_name, this.company_address).subscribe((response) => {
         if (response.createShipper == 'Ok') {          
           this.router.navigate(['contracts'])
-        } else if (response != 'Ok'){
+        } else if (response.createShipper != 'Ok'){
           
         }
       });

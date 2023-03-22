@@ -1,4 +1,7 @@
 export interface Shipper {
-   name: string
-   address: string
+   key?: string
+   name?: string
+   address?: string
+   createShipper?: string
+   deleteShipper?: string
 }

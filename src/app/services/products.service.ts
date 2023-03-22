@@ -79,8 +79,8 @@ export class ProductsService {
     );
   }
 
-  deleteProduct(id: string): Observable<string> {
-    return this.http.post<string>('http://localhost:8080/api/shipments/delete-product', {id: id})
+  deleteProduct(id: string): Observable<Tyre> {
+    return this.http.post<Tyre>('http://localhost:8080/api/shipments/delete-product', {id: id})
   }
   
   getAll(): Observable<Tyre[]> {

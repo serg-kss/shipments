@@ -12,6 +12,7 @@ import { CreateShipperComponent } from './components/create-shipper/create-shipp
 import { ListShippersComponent } from './components/list-shippers/list-shippers.component';
 import { CreateContractComponent } from './components/create-contract/create-contract.component';
 import { ShipperInfoComponent } from './components/shipper-info/shipper-info.component';
+import { ListContractsComponent } from './components/list-contracts/list-contracts.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path: 'contracts', component: ListShippersComponent},
   {path: 'create-shipper', component: CreateShipperComponent},
   {path: 'create-contract', component: CreateContractComponent},
-  {path: 'shippers/info', component: ShipperInfoComponent}
+  {path: 'shippers/info', component: ShipperInfoComponent},
+  {path: 'contracts-list', component: ListContractsComponent}
 ];
 
 @NgModule({
