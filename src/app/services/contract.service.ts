@@ -28,6 +28,10 @@ export class ContractService {
   getAllContracts(): Observable<Contract[]> {
     return this.http.get<Contract[]>('http://localhost:8080/api/shipments/get-contracts')
   }
+  
+  getSomeContracts(key:string): Observable<Contract[]> {
+    return this.http.get<Contract[]>('http://localhost:8080/api/shipments/find-contracts?key='+ key)
+  }
 
   deleteContract(key: string): Observable<Contract> {
     return this.http.post<Contract>('http://localhost:8080/api/shipments/delete-contract', {key: key})

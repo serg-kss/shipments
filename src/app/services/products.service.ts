@@ -90,4 +90,8 @@ export class ProductsService {
         tap((response) => (this.products = response)),
       );
   }
+
+  getProduct(key: string): Observable<Tyre[]> {
+    return this.http.get<Tyre[]>('http://localhost:8080/api/shipments/find-product?tyre_id='+ key)
+  }
 }
